@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Word Guess Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    
+  </head>
+  <body>
+    <header>
+      <h1 class="heading">Things found in a classroom!</h1>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 instructions-col">
+          <p>Everytime, computer chooses a new word and the player is supposed to guess the word. The player gets 15 guesses for each word.</p>
+          <p>Press any alphabet key on your keyboard to take a guess!</p>
+        <!-- close col-1 of ro-1 -->
+        </div>
+        <!-- close row-1 -->
+      </div>
+      <div class="row">
+        <div class="col-md-6 guess-col">
+            <p>User guessed word: <span id="word"><strong> </strong></span></p>
+            
+          <!-- close col-1 row-2 -->
+        </div>
+        <div class="col-md-6 guess-col">
+            <p>Guesses Left: <span id="gLeft"><strong> </strong></span></p>
+            <p>Your guesses: <span id="guess"><strong> </strong></span></p>
+            
+          <!-- close col-2 row-2 -->
+        </div>
+        <!-- close row-2 -->
+      </div>
+      <div class="row">
+        <div class="col-md-12 score-col">
+            <p>Score: <span id="scoreId"><strong> </strong></span></p>
+          <!-- close col-1 row-3 -->
+        </div>
+        <!-- close row-3 -->
+      </div>
+      <!-- close container -->
+    </div>  
+
+    
+      
+
+    <script src="assets/javascript/script.js">
+    </script>
+    
+  </body>
+</html>

@@ -1,0 +1,44 @@
+
+      *{
+        box-sizing: border-box;
+      }
+      header{
+        background: rgb(157, 227, 255);
+        
+        text-align: center;
+        padding: 20px;
+        margin: 5px;
+        
+      }
+      .heading{
+        font-family: 'Courier New', Courier, monospace;
+      }
+      body{
+        background-image: url("../images/body-background-2.png");
+      }
+      .instructions-col{
+        padding: 10px;
+        text-align: center;
+      }
+      p{
+        font-weight: 400;
+      }
+      .guess-col{
+        padding: 20px;
+        text-align: left;
+        border: 1px solid rgb(243, 243, 129);
+        background-image: url("../images/weather.png");
+        font-weight: 100;
+        font-size: 18px;
+        
+      }
+      .score-col{
+        padding: 20px;
+        margin: 5px;
+        width: 100%;
+        text-align: center;
+        border: 1px solid rgb(243, 243, 129);
+        background-image: url("../images/weather.png");
+        font-weight: 100;
+        font-size: 18px;
+      }
