@@ -7,18 +7,22 @@ var computerChoices = ["laptop", "charger", "notebook", "classroom", "pen", "pen
       var score= 0;
       var flag=0;
       var userWordLength = 0;
+      var currentWord;
+      var res;
+      generateWord();
       // Randomly pick a word from the computerChoices array
-      var currentWord = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+      function generateWord(){
+      currentWord = computerChoices[Math.floor(Math.random() * computerChoices.length)];
             //display the picked word in console
             console.log("Computer's choice : " +currentWord);
             console.log("-------");
-            var res = currentWord.split("");
+            res = currentWord.split("");
             for(var index=0; index<res.length; index++){
               userWord.push("-");
             }
-
+          };
      
-      alert("Press any key to start game"); 
+      alert("Press Enter to start game"); 
       document.onkeyup = function(event)
       {
         
@@ -92,26 +96,28 @@ var computerChoices = ["laptop", "charger", "notebook", "classroom", "pen", "pen
           displayScore.textContent = score;
           alert ("The word is : " +userWord+ "You won!");
           alert ("Your score: " +score);
-          alert ("Refresh page to start new game.")
+          alert ("Press Enter to refresh game");
           inputArr = [];
           guessLeft = 15;
           remainingGuess.textContent= guessLeft;
           userWord = [];
           displayWord.textContent = userWord;
           displayGuess.textContent = inputArr.join(', ');
+          generateWord();
           
         }  //close if
         else if (guessLeft === 0){
           // guesses are over and could not guess the word
           alert ("Oops! You lost. The word is : " +currentWord);
           alert ("Your score: " +score);
-          alert ("Refresh page to start new game.")
+          alert ("Press Enter to refresh game.")
           inputArr = [];
           displayGuess.textContent = inputArr.join(', ');
           guessLeft = 15;
           remainingGuess.textContent= guessLeft;
           userWord = [];
           displayWord.textContent = userWord;
+          generateWord();
           
         }   
       };    //close checkInput()
